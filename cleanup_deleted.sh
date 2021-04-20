@@ -1,6 +1,6 @@
 #This script may take some time to execute (~1min)
 #It will simply move and delete all files that where marked as deleted in their metadata.
-#TODO : dry-run option to list what would be moved/deleted
+#TODO : dry-run option to list what would be moved/deleted in (for now deletedMeta, later specify any name or print in std)
 #TODO : move-only option without deletion
 cd ~/.local/share/remarkable/xochitl/
 find -type f -exec grep -l '"deleted": true' {} \; > ../deletedMeta
